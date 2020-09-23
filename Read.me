@@ -1,0 +1,39 @@
+This code is not 100% mine. The original code is called ANYSHAPE.ZIP, but unfortunately I don't remember
+who the author is. If you recognize your code please e-mail me so I can give the credit for your work.
+
+Original features:
+- drawing shapes using mouse 
+
+New features added:
+- drawing shapes from image
+- saving/loading shapes in/from txt files
+- animated shapes
+- combined shapes
+- an OCX that loads shapes from txt files even at design time
+
+Steps that you have to follow in this program:
+1. Load a picture (bmp, gif or jpg)
+2. Set the limits for picture scan (UpperLeft and LowerRight corners)
+   (the picture must have a border - background color)
+3. Choose the background color
+4. Choose Shadow from the menu
+5. After the shadow command is complete choose Trace from the menu
+6. Click the Show button
+
+
+For animated shapes:
+1. Load a saved txt file that will be Frame 0
+2. Load frames 1-5 from txt files
+3. Click the Animate button
+
+For combined shapes
+1. Load Frame0 from txt file using the Load button
+2. Load Frame1 from txt file using the Load Frames button
+3. Click the Intersect button
+
+Using the OCX
+	At design time:
+		Type something in Form property
+		Type the path to the txt file in the File property of the object
+	At the runtime
+		call the loadf function using the path to the txt file and the form that you want to shape as parameters
